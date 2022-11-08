@@ -1,0 +1,22 @@
+batch_size: 32
+epochs: 30
+save_per_blocks: 5
+lr: 0.0005
+num_workers: 2
+adam_weight_decay: 0.01
+adam_beta1: 0.9
+adam_beta2: 0.999
+pretrain_model: /data/text_data/roberta-chinese/char_model/chinese_roberta_L-4_H-128
+
+vocab_file: /data/text_data/roberta-chinese/char_model/chinese_roberta_L-4_H-128/vocab.txt
+train_txt_scp: /data/text_data/wholeset_train.scp
+test_txt: /data/text_data/test.txt
+
+log_freq: 1000
+# output_dir: /home/tianxf/run/workspace_macbert_128/singlegpu
+output_dir: /home/tianxf/run/workspace_macbert_128/
+# tensorboard_dir: /home/tianxf/run/workspace_macbert_128/singlegpu/tensorboard_platform
+# train_log_file: /home/tianxf/run/workspace_macbert_128//singlegpulog_20220805
+
+tensorboard_dir: /home/tianxf/run/workspace_macbert_128/tensorboard_platform
+train_log_file: /home/tianxf/run/workspace_macbert_128/log_20220805
